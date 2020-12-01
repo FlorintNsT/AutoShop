@@ -31,9 +31,6 @@
    
 	<?php include('topClient.php'); ?>
 	
-
-    
-	
 	<div id="shop">
 	<form id= "lista" action="" method="post">
 		<p  class = "box" id = "headerMic1" >Alege Modelul de Masina</p>
