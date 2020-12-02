@@ -1,5 +1,5 @@
 <?php 
-    //include_once ('../common/config.php');
+    include_once ('../common/config.php');
 class LoginView{
 
 
@@ -163,10 +163,10 @@ class LoginView{
         ';
     }
 
-    public static function executeLogin($input){
+    public static function executeLogin($dbh, $input_user, $input_password){
         echo "nu are cum";
-        $uname=$input['username'];
-        $password=($input['password']);
+        $uname=$input_user;
+        $password=$input_password;
         $sql ="SELECT username, password FROM user WHERE username=:uname";
         $query= $dbh -> prepare($sql);
         $query-> bindParam(':uname', $uname, PDO::PARAM_STR);
@@ -178,7 +178,7 @@ class LoginView{
            if($uname == 'admin'){
               //echo $uname;
               $_SESSION['admin'] = "admin";
-              echo "<script type='text/javascript'> document.location = 'admin.php'; </script>";
+              echo "<script type='text/javascript'> document.location = 'adminController.php'; </script>";
            } else {
              
               $_SESSION['admin'] = null;
@@ -195,8 +195,8 @@ class LoginView{
                     if ($res1[0] == $password){
                      echo "<script> alert('".$password."')</script>";
                       
-                   echo "<script type='text/javascript'> document.location = 'client.php'; </script>";
-                    header("location: client.php");
+                   echo "<script type='text/javascript'> document.location = '../client/clientController.php'; </script>";
+                    header("location: ../client/clientController.php");
      
                    } else {
                       $error1 = "Parola invalida.";

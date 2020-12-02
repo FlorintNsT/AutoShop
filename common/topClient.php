@@ -78,14 +78,14 @@ echo '
            		 }
        		 };
        		// var str = "0";
-       		xmlhttp.open("GET", "client.php", true);
+       		xmlhttp.open("GET", "../client/clientController.php", true);
        	    xmlhttp.send();
 
          }
 
          function logout(){
           sessionStorage.clear()
-            window.location.href = "login.php";
+            window.location.href = "../cont/loginController.php";
 
          }
 	</script>

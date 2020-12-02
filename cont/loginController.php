@@ -12,8 +12,7 @@ if (isset($_GET['contNouR'])){
     
     if(isset($_POST['login']))
     {
-        $login_par = $_POST['login'];
-        LoginView::executeLogin($login_par);
+        LoginView::executeLogin($dbh, $_POST['username'], $_POST['password']);
     }
     if (isset($_POST['register'])) {
        
