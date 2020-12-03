@@ -71,7 +71,7 @@
    
                         echo "<div id='lista'>";
                         echo "Denumire: ".$row['denumire']."<br> Pret:".$row['pret'	]."  RON <br> <img src='data:image/jpeg;base64,".	base64_encode($row["img"])."' height='170' width='170' 	><br>";
-                        echo "<form action='detalii.php' method='post'>";
+                        echo "<form action='../piesa/detaliiController.php' method='post'>";
                         echo "<input  class = 'Butonel1' type='submit' 	name='Detail' value='Detalii'><br>";
                         echo "<input type='hidden' value='".$row['id_piesa']."' 	name='id_piesa'>";			
                         echo  "</form>";
@@ -88,7 +88,7 @@
                      while($row = mysqli_fetch_array($piesa)){
                         echo "<div id='lista'>";
                         echo "Denumire: ".$row['denumire']."<br> Pret:".$row['pret'	]."  RON<br> <img src='data:image/jpeg;base64,".	base64_encode($row["img"])."' height='170' width='170' 	><br>";
-                        echo "<form action='detalii.php' method='post'>";
+                        echo "<form action='../piesa/detaliiController.php' method='post'>";
                         echo "<input class = 'Butonel1' type='submit' 	name='Detail' value='Detalii'><br>";
                         echo "<input type='hidden' value='".$row['id_piesa']."' 	name='id_piesa'>";			
                         echo  "</form>";

@@ -9,24 +9,13 @@ echo '
 
 	<div id="top">
 	<h1 class = "box" id = "headerMic" >MotoShop</h1>
-	
-	<!---
-		inlocuit cu buton cu js petr ajax
-		--->
 	';
   if (isset($id_user)){
       echo ' 
   <button class = "Butonel1" onclick="verifCmd();">Istoric</button> 
   <p class = "Nume" > ' . "User: ".$id_user. ' </p>
-      <!---
-    inlocuit cu buton cu js petr ajax
-    --->
   
-
   <button class = "Butonel1"  name="Cos" value="Verifica Cos" onclick="verifCos();" >Cos</button>
-
-
-  
   <button class = "Butonel1"  name="Back" value="VBack" onclick="shop();" >Magazin</button>
  ';
   }
@@ -36,8 +25,6 @@ echo '
 
     <br></br>
 </div>
-
-	
 	<script type="text/javascript">
 		function verifCos(){
 
@@ -69,7 +56,7 @@ echo '
       		
          }
          function shop(){
-			//window.location.href = "client.php";
+			//window.location.href = "../client/clientController.php";
 			var xmlhttp = new XMLHttpRequest();
         		xmlhttp.onreadystatechange = function() {
           	 	 if (this.readyState == 4 && this.status == 200) {
