@@ -4,7 +4,6 @@ if (isset($_SESSION['id_user'])){
   $id_user = $_SESSION['id_user'];
 }
 
-
 echo '
 
 	<div id="top">
@@ -32,11 +31,11 @@ echo '
         		xmlhttp.onreadystatechange = function() {
           	 	 if (this.readyState == 4 && this.status == 200) {
            	 	 //    document.getElementById("formlogare").remove();
-            		    document.getElementById("centrat").innerHTML = this.	responseText;
+            		    document.getElementById("centrat").innerHTML = this.responseText;
            		 }
        		 };
        		// var str = "0";
-       		xmlhttp.open("GET", "cos.php", true);
+       		xmlhttp.open("GET", "../comanda/cosController.php", true);
        	    xmlhttp.send();
 
          }
@@ -46,7 +45,7 @@ echo '
         		xmlhttp.onreadystatechange = function() {
           	 	 if (this.readyState == 4 && this.status == 200) {
            	 	 //    document.getElementById("formlogare").remove();
-            		    document.getElementById("centrat").innerHTML = this.	responseText;
+            		    document.getElementById("centrat").innerHTML = this.responseText;
            		 }
        		 };
        		// var str = "0";
@@ -61,7 +60,7 @@ echo '
         		xmlhttp.onreadystatechange = function() {
           	 	 if (this.readyState == 4 && this.status == 200) {
            	 	 //    document.getElementById("formlogare").remove();
-            		    document.getElementById("tot").innerHTML = this.	responseText;
+            		    document.getElementById("tot").innerHTML = this.responseText;
            		 }
        		 };
        		// var str = "0";

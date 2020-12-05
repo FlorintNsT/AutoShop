@@ -4,8 +4,6 @@
  		session_start();
  		$query = mysqli_query($conn,"SELECT DISTINCT date FROM comanda WHERE id_user='".$_SESSION['id_user']."' ORDER BY date DESC");
  			
-
-
  		 while($row = mysqli_fetch_array($query)){
  		 	
  		 	$qr2= mysqli_query($conn,"SELECT * FROM comanda WHERE date ='".$row[0]."'");
@@ -15,7 +13,6 @@
  		 	echo "<br>---------------<br>";
 
  		 	
-
  		 	while($row2 = mysqli_fetch_array($qr2)){
  		 		
 				
@@ -56,7 +53,7 @@
 
  		 		<script>
 	   					func detalii(){
-	   						alert("ce plm");
+	   						alert("wtf");
 
 	   					}
 	   			</script>

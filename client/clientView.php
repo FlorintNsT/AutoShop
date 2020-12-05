@@ -136,7 +136,7 @@
                                  }
                               };
                               
-                              xmlhttp.open("GET", "comenziClienti.php", true);
+                              xmlhttp.open("GET", "..comanda/comenziClienti.php", true);
                                  xmlhttp.send();
                               </script>
             
