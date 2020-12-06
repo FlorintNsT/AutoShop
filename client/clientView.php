@@ -6,7 +6,9 @@
 
       $conn = mysqli_connect('localhost','root','');
 		mysqli_select_db($conn,'PieseAutoDB');
-		session_start();
+		if(session_id() == '') {
+         session_start();
+      }
 		$id_user = $_SESSION['id_user'];
 
       include('../comanda/cosDeleteLogic.php');

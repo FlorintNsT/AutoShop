@@ -13,7 +13,9 @@ ClientView::showClientView();
     public static function startClientController($id_piesa){
         $conn = mysqli_connect('localhost','root','');
 		    mysqli_select_db($conn,'PieseAutoDB');
-		    session_start();
+		    if(session_id() == '') {
+          session_start();
+       }
 		    $id_user = $_SESSION['id_user'];
         $sql="INSERT INTO cos(id_piesa,id_user) VALUES ('".$id_piesa."','".$_SESSION['id_user']."')";
 		    //echo $sql;

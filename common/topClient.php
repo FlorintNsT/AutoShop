@@ -49,7 +49,7 @@ echo '
            		 }
        		 };
        		// var str = "0";
-       		xmlhttp.open("GET", "comenziClienti.php", true);
+       		xmlhttp.open("GET", "../comanda/comenziClientiController.php", true);
        	    xmlhttp.send();
       	
       		
