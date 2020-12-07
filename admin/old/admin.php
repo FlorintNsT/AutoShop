@@ -7,7 +7,7 @@
 	 <link rel="stylesheet" href="admin.css">
 </head>
 <body>
-	<?php include('topClient.php'); ?>
+	<?php include('../common/topClient.php'); ?>
 	<link rel="stylesheet" href="client.css">
 	<div>
 		<ul>
@@ -24,6 +24,6 @@
 			<li><a href="stergePiesa.php">Sterge Piese</a></li>
 		</ul>
 	</div>
-	<?php include('bottomClient.php'); ?>
+	<?php include('../common/bottomClient.php'); ?>
 </body>
 </html>

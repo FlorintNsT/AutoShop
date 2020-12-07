@@ -178,7 +178,7 @@ class LoginView{
            if($uname == 'admin'){
               //echo $uname;
               $_SESSION['admin'] = "admin";
-              echo "<script type='text/javascript'> document.location = 'adminController.php'; </script>";
+              echo "<script type='text/javascript'> document.location = '../admin/adminController.php'; </script>";
            } else {
              
               $_SESSION['admin'] = null;
