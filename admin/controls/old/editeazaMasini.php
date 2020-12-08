@@ -39,9 +39,6 @@
 				 if (isset($_POST['search'])){
 				 	$producator = $_POST['producator'];
 				 	
-
-				 	
-				 		
 				 		if ($producator === 'none'){
 				 			$masini = mysqli_query($conn,"SELECT * from masina");
 					 	} else {
@@ -49,7 +46,6 @@
 					 	}
 					
 					 
-	   				
 	   				 while($row = mysqli_fetch_array($masini)){
 	   				 	echo "<div id='cmmd'>";
 	   				 	echo "<br>---------------<br>";
@@ -66,18 +62,18 @@
 
 				 }else{
 				// 	$masina = $_POST['masina'];
-				 	$piesa = mysqli_query($conn,"SELECT * from masina");
-	   				 while($row = mysqli_fetch_array($piesa)){
-	   				 	echo "<div id='cmmd'>";
-	   				 	echo "<br>---------------<br>";
-	   				 	echo "<form action='modifMasina.php' method='post'>";
-	   				 	echo " ".$row['producator'].' '.$row['model']." <br> <br></a>";
-	   			 		echo "<input type='submit' name='Edit' value='Editeaza'><br>";
-	   			 		
-	   			 		 echo "<input type='hidden' value='".$row['id_masina']."' name='id_masina'>";
+						$piesa = mysqli_query($conn,"SELECT * from masina");
+						while($row = mysqli_fetch_array($piesa)){
+							echo "<div id='cmmd'>";
+							echo "<br>---------------<br>";
+							echo "<form action='modifMasina.php' method='post'>";
+							echo " ".$row['producator'].' '.$row['model']." <br> <br></a>";
+							echo "<input type='submit' name='Edit' value='Editeaza'><br>";
+							
+							echo "<input type='hidden' value='".$row['id_masina']."' name='id_masina'>";
 
-	   			 		echo  "</form>";
-	   			 		echo "</div>";
+							echo  "</form>";
+							echo "</div>";
 	   			 		
 	   			 }
 

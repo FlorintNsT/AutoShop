@@ -14,7 +14,7 @@
 	<form action="" method="post">
 	<p>Alege Modelul de Masina</p>
 			<select name="masina">
-
+	
 			 <?php 
  					$checkMasina = mysqli_query($conn,"SELECT * from masina");
 	   				 	echo "<option value = 'none'>----</option>";
