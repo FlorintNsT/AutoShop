@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="editeazaMasini.css">
 </head>
 <body>
-	<?php include('topClient.php'); ?>
+	<?php include('../../common/topClient.php'); ?>
 	<form action="" method="post">
 	<p>Alege Modelul de Masina</p>
 			<select name="masina">
@@ -85,7 +85,7 @@
 		</div>
 		<br/>
 		<button class = "Butonel1"  name="Logout" value="Logout" onclick="back();"> Back</button>
-			<?php include('bottomClient.php'); ?>
+			<?php include('../../common/bottomClient.php'); ?>
 </body>
 </html>
 

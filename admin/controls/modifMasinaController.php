@@ -7,6 +7,7 @@ $producator = 'none';
 $model = 'none';
 $tip_motor = 'none';
 $id_masina = 'none';
+
 if(isset($_POST['producator'])){
     $producator = $_POST['producator'];
 }
@@ -24,6 +25,7 @@ if(isset($_POST['id_masina'])){
 }
 
 ModifMasinaController::startModifMasinaController($conn, $producator, $model, $tip_motor, $id_masina);
+
 class ModifMasinaController{
     public static function startModifMasinaController($conn, $producator, $model, $tip_motor, $id_masina){
 

@@ -20,7 +20,7 @@ class AdminView{
                     <br/>
                     <li><a href="controls/editeazaMasiniController.php">Editeaza Masini</a></li>
                     <br/>
-                    <li><a href="editeazaPiese.php">Editeaza Piese</a></li>
+                    <li><a href="controls/editeazaPieseController.php">Editeaza Piese</a></li>
                     <br/>
                     <li><a href="stergeMasina.php">Sterge Masina</a></li>
                     <br/>
