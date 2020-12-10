@@ -33,7 +33,7 @@ ModifPiesaController::startModifPiesaController($conn, $denumire, $pret, $masina
 
 class ModifPiesaController{
 
-    public static function startModifPiesaController(){
+    public static function startModifPiesaController($conn, $denumire, $pret, $masina, $img_path, $id_piesa){
 
         include 'modifPiesaView.php';
       
@@ -74,9 +74,7 @@ class ModifPiesaController{
             ModifPiesaView::showView($conn,$res, $id_piesa);
         }
 
-        
     }
-
 }
 
 ?>

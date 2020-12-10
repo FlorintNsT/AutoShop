@@ -22,9 +22,9 @@ class AdminView{
                     <br/>
                     <li><a href="controls/editeazaPieseController.php">Editeaza Piese</a></li>
                     <br/>
-                    <li><a href="stergeMasina.php">Sterge Masina</a></li>
+                    <li><a href="controls/stergeMasinaController.php">Sterge Masina</a></li>
                     <br/>
-                    <li><a href="stergePiesa.php">Sterge Piese</a></li>
+                    <li><a href="controls/stergePiesaController.php">Sterge Piese</a></li>
                 </ul>
             </div>';
             include('../common/bottomClient.php'); 

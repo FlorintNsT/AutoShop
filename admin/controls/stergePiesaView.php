@@ -1,8 +1,8 @@
 <?php 
 
-class EditeazaPieseView{
+class StergePiesaView{
 
-    public static function showEditeazaPieseView1(){
+    public static function showStergePiesaView1(){
         echo '
         <!DOCTYPE html>
         <html>
@@ -19,7 +19,7 @@ class EditeazaPieseView{
         ';
     }
 
-    public  static function showEditeazaPieseView2(){
+    public  static function showStergePiesaView2(){
         echo '
         </select>
         <!-- <select tip="motor">

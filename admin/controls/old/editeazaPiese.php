@@ -92,7 +92,7 @@
 <script>
 
 			function back(){
-					window.location.href = "admin.php";
+					window.location.href = "../../admin/adminController.php";
 			}
 
 	</script>

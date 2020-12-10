@@ -13,8 +13,6 @@
 		//$res = mysqli_query($conn,"DELETE from piesa where id_masina='".$_POST['id_masina']."'");
 		mysqli_query($conn,$res);
 
-			
-
 		}
     }
 	
@@ -75,10 +73,8 @@
 	   				 	echo "<form  action=".$_SERVER['PHP_SELF']." method='post' >";
 	   				 	echo " ".$row['producator'].' '.$row['model'].' '.$row['tip_motor']. " <br><br></a>";
 	   					echo "<input class = 'Butonel1' type='submit' name='Delete' value='Sterge'><br>";
-	   					
 	   					 echo "<input type='hidden' value='".$row['id_masina']."' name='id_masina'>";
 	   					 echo "<input type='hidden' value='1' name='sterge'>";
-	   					
 	   					echo  "</form>";
 	   					echo "</div>";
 	   				 }
@@ -91,10 +87,8 @@
 	   				 	echo "<form  action=".$_SERVER['PHP_SELF']." method='post' >";
 	   				 	echo " ".$row['producator'].' '.$row['model'].' '.$row['tip_motor']." <br> <br></a>";
 	   			 		echo "<input class = 'Butonel1' type='submit' name='Delete' value='Sterge'><br>";
-	   			 		
-	   			 		 echo "<input type='hidden' value='".$row['id_masina']."' name='id_masina'>";
-	   			 		 echo "<input type='hidden' value='1' name='sterge'>";
-
+	   			 		echo "<input type='hidden' value='".$row['id_masina']."' name='id_masina'>";
+	   			 		echo "<input type='hidden' value='1' name='sterge'>";
 	   			 		echo  "</form>";
 	   			 		echo "</div>";
 	   			 }

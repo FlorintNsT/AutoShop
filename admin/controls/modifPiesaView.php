@@ -24,8 +24,8 @@ class ModifPiesaView{
                             
         echo '
         </select><br>
-        <p>Denumire</p><input type="text" name="denumire" value="<?php echo $res[2]; ?>"><br>
-        <p>Pret in RON</p><input type="text" name="pret" value="<?php echo $res[3]; ?>"><br>
+        <p>Denumire</p><input type="text" name="denumire" value="'.$res[2].'"><br>
+        <p>Pret in RON</p><input type="text" name="pret" value="'.$res[3].'"><br>
         
         <p>Image</p><input class = "Butonel1" type="file" name="img_path"><br>';
                     
