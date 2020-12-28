@@ -1,7 +1,7 @@
 <?php 
     class DetaliiView{
 
-        public static function showDetaliiView($res){
+        public static function showDetaliiView($obj){
 
             echo '
             <link rel="stylesheet" href="../client/client.css">
@@ -16,7 +16,7 @@
              include('../common/topClient.php');
              
             echo "
-            <p class='eticheta' >Denumire: ".$res['denumire']."</p><br> <p class='eticheta' >Pret:".$res['pret']." RON </p><br> <img src='data:image/jpeg;base64,".base64_encode($res["img"])."' height='350' width='350' ><br>
+            <p class='eticheta' >Denumire: ".$obj->denumire."</p><br> <p class='eticheta' >Pret:".$obj->pret." RON </p><br> <img src='data:image/jpeg;base64,".base64_encode($obj->img)."' height='350' width='350' ><br>
     
             ";
                                         
