@@ -99,8 +99,7 @@
                         echo "</div>";
                      }
                
-               }  
-                           
+               }          
                   if (isset($_GET['comanda'])){
                         $cmd = $_GET['comanda'];
 
@@ -139,8 +138,6 @@
                               xmlhttp.open("GET", "..comanda/comenziClienti.php", true);
                                  xmlhttp.send();
                               </script>
-            
-
                      ';
                   }
                }
