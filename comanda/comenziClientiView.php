@@ -12,7 +12,7 @@
         public static function showView2($denumire, $model, $producator, $tip_motor, $pret, $row2){
             echo $denumire;
             echo " ".$model." ".$producator." ".$tip_motor." ".$pret." RON
-                <form action='detalii.php' method='post'>
+                <form action='../piesa/detaliiController.php' method='post'>
                     <input type='submit' name='Detail' class = 'Butonel1' value='Detalii'><br>
                     <input type='hidden' value='".$row2."' name='id_piesa'>	
             </form>";
