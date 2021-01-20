@@ -71,7 +71,8 @@ class ModifPiesaController{
         if($id_piesa !== 'none'){
             $reg = mysqli_query($conn,"SELECT id_masina, img, denumire, pret FROM piesa WHERE id_piesa='".$id_piesa."'");
             $res = mysqli_fetch_array($reg);
-            ModifPiesaView::showView($conn,$res, $id_piesa);
+            $checkMasina = mysqli_query($conn,"SELECT * from masina");
+            ModifPiesaView::showView($conn,$res, $id_piesa, $checkMasina);
         }
 
     }

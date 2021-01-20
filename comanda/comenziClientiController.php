@@ -27,11 +27,11 @@
                     $res = mysqli_fetch_array($check);
 
                     $piesa = new Piesa($res['id_piesa']
-                                    ,$res['id_masina']
-                                    ,$res['pret']
-                                    ,$res['denumire']
-                                    ,$res['img']
-                                    ,$res['sters']);
+                                        ,$res['id_masina']
+                                        ,$res['pret']
+                                        ,$res['denumire']
+                                        ,$res['img']
+                                        ,$res['sters']);
                      
                     $qr4 = "SELECT * FROM masina WHERE id_masina = ".$res['id_masina'];
                     $check2 = mysqli_query($conn,$qr4);

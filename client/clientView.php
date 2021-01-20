@@ -2,14 +2,12 @@
 
  class ClientView{
 
-    public static function showClientView(){
+    public static function showClientView($id_user, $checkMasina, $piesa){
 
       $conn = mysqli_connect('localhost','root','');
 		mysqli_select_db($conn,'PieseAutoDB');
-		if(session_id() == '') {
-         session_start();
-      }
-		$id_user = $_SESSION['id_user'];
+		
+		
 
       include('../comanda/cosDeleteLogic.php');
       echo '   
@@ -33,7 +31,7 @@
             <select name="masina">
             ';
 
-      $checkMasina = mysqli_query($conn,"SELECT * from masina");
+      
 
       echo "<option value = 'none'>----</option>";
         
@@ -86,7 +84,7 @@
                      }
             }else {
                // 	$masina = $_POST['masina'];
-                  $piesa = mysqli_query($conn,"SELECT * from piesa where sters != 1");
+                 
                      while($row = mysqli_fetch_array($piesa)){
                         echo "<div id='lista'>";
                         echo "Denumire: ".$row['denumire']."<br> Pret:".$row['pret'	]."  RON<br> <img src='data:image/jpeg;base64,".	base64_encode($row["img"])."' height='170' width='170' 	><br>";

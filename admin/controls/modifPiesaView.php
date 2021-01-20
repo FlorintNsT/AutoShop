@@ -2,7 +2,7 @@
 
 class ModifPiesaView{
 
-    public static function showView($conn,$res, $id_piesa){
+    public static function showView($conn,$res, $id_piesa, $checkMasina){
         echo '
             <!DOCTYPE html>
             <html>
@@ -17,7 +17,7 @@ class ModifPiesaView{
                 <p>Alege Modelul de Masina</p>
                 <select name="masina">';
                             
-        $checkMasina = mysqli_query($conn,"SELECT * from masina");
+  
         while($row = mysqli_fetch_array($checkMasina)){
             echo "<option value='".$row['id_masina']."'>".$row['producator']." ".$row['model']."</option>";
         }

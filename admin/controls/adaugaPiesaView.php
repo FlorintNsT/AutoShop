@@ -34,7 +34,7 @@ class AdaugaPiesaView{
              <script>
      
                      function back(){
-                             window.location.href = "./adminController.php";
+                             window.location.href = "../adminController.php";
                      }
      
              </script>
